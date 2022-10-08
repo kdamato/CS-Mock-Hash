@@ -1,0 +1,24 @@
+{
+  "name": "cs-mock-hash",
+  "version": "1.0.0",
+  "description": "Please refer to the directions in Canvas.",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "readline-sync": "^1.4.10"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kdamato/CS-Mock-Hash.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kdamato/CS-Mock-Hash/issues"
+  },
+  "homepage": "https://github.com/kdamato/CS-Mock-Hash#readme"
+}

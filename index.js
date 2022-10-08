@@ -25,9 +25,11 @@ checkPassword = async (username, plaintextPassword) => {
         // TODO: The result variable is a boolean. True means the user was valid. Take action accordingly.
         if (result) {
             // TODO: Display message for valid credentials
+            console.log(`\n⭐️ Welcome back, ${username}, you're a valid user! ⭐️\n`)
         }
         else {
             // TODO: Display message for invalid credentials
+            console.log(`🤨 I don't recognize you! Get out! 👋`)
         }
     }
     else {
@@ -37,14 +39,12 @@ checkPassword = async (username, plaintextPassword) => {
 }
 
 hashPassword = async (username, password) => {
-    // TODO: Make sure to delete this console.log once you're done implementing the function!
-    console.log('\nUh-oh, hashPassword is not yet implemented. 😢')
-
     // TODO: Make the password hash using bcrypt
-
+    let hashedPassword = await bcrypt.hash(password, 12)
     // TODO: Add the user and password hash to the global store object
-
+    globalStore[username] = hashedPassword
     // TODO: Print a status update including the username and password hash
+    console.log(`✅ User '${username}' was added. Their password hash is ${hashedPassword}\n`)
 }
 
 
